@@ -1,0 +1,98 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+body *{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* seción portafolio*/
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; 
+  }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; 
+  }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); 
+  }
+
+  .gallery .container{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .top-left{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+  .top-right{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  .centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bottom-right{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  @media (max-width: 450px) {
+    .titulo_header{
+        display: none;
+    }
+    .gallery {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-width: 100%;
+      -moz-column-width: 100%;
+      column-width: 100%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .btn.filter {
+      padding-left: 1.1rem;
+      padding-right: 1.1rem;
+    }
+  }
+  button.close {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    padding-right: 1rem;
+    padding-top: .6rem;
+  }
+
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:  white;
+    color: rgb(199, 55, 19); /* Text color */
+    border-radius: 50%
+  }
