@@ -15,12 +15,17 @@ h1{
 
 h2{
   font-weight: 700;
-  font-size: xx-large;
+  font-size: 40px;
 }
 
 h3{
   font-weight: 200;
   font-size: large;
+}
+
+.separador{
+  background-color: rgb(214, 211, 18);
+  height: 40px;
 }
 
 /* seción portafolio*/
